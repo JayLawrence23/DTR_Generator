@@ -5,14 +5,6 @@ import java.sql.*;
 public class DbHelperPSQL {
     public static Connection con = null;
 
-    /* public DbHelperPSQL()
-     {
-         if(con == null)
-         {
-             ConfigureConnection();
-         }
-     }
- */
     public static Connection ConnectDB()
     {
             try {

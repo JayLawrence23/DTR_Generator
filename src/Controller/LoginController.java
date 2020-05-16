@@ -10,7 +10,6 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.geometry.Rectangle2D;
-import javafx.scene.Cursor;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -170,11 +169,6 @@ public class LoginController implements Initializable {
                         lblError1.setVisible(true);
                         txtUsername1.setText("");
                         txtPassword.setText("");
-//                    pnlLogin.toFront();
-//                    pnlPassword.setVisible(false);
-//                    pnlLogin.setVisible(true);
-//                    txtUsername.setText("");
-//                    lblError.setText("");
                     } else if (rs.getString("status").equals("Inactive")) {
                         lblError1.setTextFill(Color.RED);
                         lblError1.setText("The employee is not active");
@@ -193,10 +187,6 @@ public class LoginController implements Initializable {
                         stage.setX((primScreenBounds.getWidth() - stage.getWidth()) / 2);
                         stage.setY((primScreenBounds.getHeight() - stage.getHeight()) / 2);
                     } else {
-//                    if(rs.getString("status") == "Active" && rs.getString("typeofemp") == "Administrator"){
-//                        System.out.println(rs.getString("typeofemp"));
-//                        System.out.println(rs.getString("status"));
-//                    }
                         globalId = rs.getString("employee_id");
                         globalName = rs.getString("firstname");
                         Parent root = FXMLLoader.load(getClass().getResource("../View/MainMenu.fxml"));
@@ -247,11 +237,6 @@ public class LoginController implements Initializable {
                         lblError1.setVisible(true);
                         txtUsername.setText("");
                         txtPassword.setText("");
-//                    pnlLogin.toFront();
-//                    pnlPassword.setVisible(false);
-//                    pnlLogin.setVisible(true);
-//                    txtUsername.setText("");
-//                    lblError.setText("");
                     }
                     else if (rs.getString("status").equals("Inactive")) {
                         lblError1.setTextFill(Color.RED);

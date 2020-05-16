@@ -13,6 +13,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.geometry.Rectangle2D;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
@@ -182,6 +183,14 @@ public class SettingsController implements Initializable {
                     txtCurrentPass.setText("");
                     txtRenewPass.setDisable(true);
                     txtNewPass.setDisable(true);
+                    Parent root = FXMLLoader.load(getClass().getResource("../View/MainMenuEmp.fxml"));
+                    Node node = (Node) event.getSource();
+                    Stage stage = (Stage) node.getScene().getWindow();
+                    stage.setScene(new Scene(root));
+                    //to set screen on Center
+                    Rectangle2D primScreenBounds = Screen.getPrimary().getVisualBounds();
+                    stage.setX((primScreenBounds.getWidth() - stage.getWidth()) / 2);
+                    stage.setY((primScreenBounds.getHeight() - stage.getHeight()) / 2);
                 } catch (Exception e) {
                     Logger.getLogger(LoginController.class.getName()).log(Level.SEVERE, null, e);
 

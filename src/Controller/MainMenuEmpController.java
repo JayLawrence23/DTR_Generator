@@ -161,9 +161,15 @@ public class MainMenuEmpController implements Initializable {
             if(rs.next())
             {
                 loadpage("Settings");
+                btnDash.setDisable(true);
+                btnProfile.setDisable(true);
+                btnRecord.setDisable(true);
             }
             else
             {
+                btnDash.setDisable(false);
+                btnProfile.setDisable(false);
+                btnRecord.setDisable(false);
                 bdPane.setCenter(pnDash);
             }
 

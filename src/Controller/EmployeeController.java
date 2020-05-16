@@ -149,8 +149,7 @@ public class EmployeeController implements Initializable {
                 }catch (Exception e) {
                     Logger.getLogger(LoginController.class.getName()).log(Level.SEVERE, null, e);
                 }
-                //   lblEmpSuc.setVisible(true);
-                //    ClearAllText();
+
             }
         }
         //===to proceed to Employee panel ==
@@ -248,8 +247,6 @@ public class EmployeeController implements Initializable {
             new FadeIn(pnEmp).play();
             pnEmp.toFront();
             ClearAllText();
-//            txtUsername.setText("");
-//            lblError.setText("");
         }
 
     }
@@ -308,7 +305,6 @@ public class EmployeeController implements Initializable {
                                     stage.initStyle(StageStyle.UNDECORATED);
                                     stage.initOwner(editButton.getScene().getWindow());
                                     stage.show();
-//                                stage.showAndWait();
 
                                     Rectangle2D primScreenBounds = Screen.getPrimary().getVisualBounds();
                                     stage.setX((primScreenBounds.getWidth() - stage.getWidth()) / 2);
@@ -391,7 +387,6 @@ public class EmployeeController implements Initializable {
             {
                 String name = rs.getString("type_name");
                 listacombo.add(name);
-                //    cbxType.getItems().add(new Label(name));
 
             }//end while
             cbxType.setItems(listacombo);
