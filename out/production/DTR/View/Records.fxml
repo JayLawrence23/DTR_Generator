@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="pnlRec" prefHeight="656.0" prefWidth="1070.0" style="-fx-background-color: #EBEAED;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.RecordsController">
+   <children>
+      <Label layoutX="70.0" layoutY="50.0" text="Records" textFill="#6f6f6f">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <Separator layoutX="14.0" layoutY="134.0" prefHeight="3.0" prefWidth="1028.0" />
+      <TabPane layoutX="1.0" layoutY="151.0" prefHeight="464.0" prefWidth="1070.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Monthly Time Record">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tbl_daily" layoutY="57.0" prefHeight="380.0" prefWidth="1070.0">
+                          <columns>
+                            <TableColumn fx:id="col_EmpID" prefWidth="98.0" text="Employee ID" />
+                            <TableColumn fx:id="col_FName" prefWidth="165.0" text="First Name" />
+                              <TableColumn fx:id="col_LName" prefWidth="104.0" text="Last Name" />
+                              <TableColumn fx:id="col_Day" prefWidth="94.0" text="Day" />
+                              <TableColumn fx:id="col_amarr" maxWidth="114.0" prefWidth="114.0" text="AM Arrival" />
+                              <TableColumn fx:id="col_amdep" maxWidth="100.0" prefWidth="100.0" text="AM Departure" />
+                              <TableColumn fx:id="col_pmarr" maxWidth="100.0" prefWidth="100.0" text="PM Arrival" />
+                              <TableColumn fx:id="col_pmdep" maxWidth="100.0" prefWidth="97.0" text="PM Departure" />
+                              <TableColumn fx:id="col_Type" minWidth="3.0" prefWidth="103.0" text="Type" />
+                              <TableColumn fx:id="col_Date" minWidth="0.0" prefWidth="93.0" text="Date" />
+                          </columns>
+                        </TableView>
+                        <JFXButton fx:id="btnGenerate" layoutX="681.0" layoutY="14.0" onAction="#handleButtonAction" prefHeight="31.0" prefWidth="154.0" style="-fx-background-color: #119B9B;" text="Generate DTR" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </JFXButton>
+                        <Label layoutX="251.0" layoutY="17.0" text="Pick month:" textFill="#6b6b6b">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <ComboBox fx:id="dtpkGenerate" layoutX="341.0" layoutY="17.0" prefHeight="25.0" prefWidth="171.0" />
+                        <Spinner fx:id="spnYear" layoutX="527.0" layoutY="17.0" prefHeight="25.0" prefWidth="126.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="All Time Record">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tbl_All" layoutX="2.0" layoutY="55.0" prefHeight="380.0" prefWidth="1070.0">
+                           <columns>
+                              <TableColumn fx:id="col_EmpID1" prefWidth="98.0" text="Employee ID" />
+                              <TableColumn fx:id="col_FName1" prefWidth="165.0" text="First Name" />
+                              <TableColumn fx:id="col_LName1" prefWidth="104.0" text="Last Name" />
+                              <TableColumn fx:id="col_Day1" prefWidth="94.0" text="Day" />
+                              <TableColumn fx:id="col_amarr1" maxWidth="114.0" prefWidth="114.0" text="AM Arrival" />
+                              <TableColumn fx:id="col_amdep1" maxWidth="100.0" prefWidth="100.0" text="AM Departure" />
+                              <TableColumn fx:id="col_pmarr1" maxWidth="100.0" prefWidth="100.0" text="PM Arrival" />
+                              <TableColumn fx:id="col_pmdep1" maxWidth="100.0" prefWidth="97.0" text="PM Departure" />
+                              <TableColumn fx:id="col_Type1" minWidth="3.0" prefWidth="103.0" text="Type" />
+                              <TableColumn fx:id="col_Date1" minWidth="0.0" prefWidth="93.0" text="Date" />
+                           </columns>
+                        </TableView>
+                        <Label layoutX="158.0" layoutY="22.0" text="Date:" textFill="#575757">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="387.0" layoutY="22.0" text="to" textFill="#515151">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <JFXButton fx:id="btnApply" layoutX="590.0" layoutY="18.0" onAction="#handleButtonAction" prefHeight="29.0" prefWidth="61.0" style="-fx-background-color: #583A6D; -fx-background-radius: 30; -fx-border-radius: 30;" text="Apply" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXButton>
+                        <DatePicker fx:id="dtpkFrom" layoutX="203.0" layoutY="21.0" promptText="Start" />
+                        <DatePicker fx:id="dtpkTo" layoutX="406.0" layoutY="20.0" promptText="End" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</Pane>

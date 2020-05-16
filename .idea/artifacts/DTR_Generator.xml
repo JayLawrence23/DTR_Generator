@@ -1,0 +1,30 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="DTR Generator">
+    <output-path>$PROJECT_DIR$/out/artifacts/DTR_Generator</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="Model.Main" />
+        <option name="description" value="" />
+        <option name="height" value="768" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="nativeBundle" value="all" />
+        <option name="title" value="" />
+        <option name="vendor" value="" />
+        <option name="version" value="" />
+        <option name="width" value="1366" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="DTR.jar">
+        <element id="module-output" name="DTR" />
+        <element id="library" level="project" name="openfx" />
+        <element id="library" level="project" name="postgresql-42.2.8" />
+        <element id="library" level="project" name="jfoenix-9.0.8" />
+        <element id="library" level="project" name="itextpdf-5.4.0" />
+        <element id="library" level="project" name="common-lang3" />
+        <element id="library" level="project" name="apache-commons" />
+        <element id="library" level="project" name="AnimateFX-1.2.0" />
+      </element>
+    </root>
+  </artifact>
+</component>

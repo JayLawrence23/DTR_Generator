@@ -1,0 +1,37 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="DTR">
+    <output-path>$PROJECT_DIR$/out/artifacts/DTR</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="Model.Main" />
+        <option name="description" value="" />
+        <option name="height" value="768" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="title" value="" />
+        <option name="vendor" value="" />
+        <option name="version" value="" />
+        <option name="width" value="1366" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="DTR.jar">
+        <element id="module-output" name="DTR" />
+      </element>
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/Dev/IntelliJRequirements/Lib All/AnimateFX-1.2.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/Dev/IntelliJRequirements/Lib All/apache-commons.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/Dev/IntelliJRequirements/Lib All/jfoenix-9.0.8.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/Dev/IntelliJRequirements/Lib All/postgresql-42.2.8.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/Dev/IntelliJRequirements/Lib All/itextpdf-5.4.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/Dev/IntelliJRequirements/Lib All/common-lang3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/Dev/IntelliJRequirements/openjfx-13.0.1_windows-x64_bin-sdk/javafx-sdk-13.0.1/lib/src.zip" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/Dev/IntelliJRequirements/openjfx-13.0.1_windows-x64_bin-sdk/javafx-sdk-13.0.1/lib/javafx-swt.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/Dev/IntelliJRequirements/openjfx-13.0.1_windows-x64_bin-sdk/javafx-sdk-13.0.1/lib/javafx.web.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/Dev/IntelliJRequirements/openjfx-13.0.1_windows-x64_bin-sdk/javafx-sdk-13.0.1/lib/javafx.base.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/Dev/IntelliJRequirements/openjfx-13.0.1_windows-x64_bin-sdk/javafx-sdk-13.0.1/lib/javafx.fxml.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/Dev/IntelliJRequirements/openjfx-13.0.1_windows-x64_bin-sdk/javafx-sdk-13.0.1/lib/javafx.media.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/Dev/IntelliJRequirements/openjfx-13.0.1_windows-x64_bin-sdk/javafx-sdk-13.0.1/lib/javafx.swing.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/Dev/IntelliJRequirements/openjfx-13.0.1_windows-x64_bin-sdk/javafx-sdk-13.0.1/lib/javafx.controls.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/Dev/IntelliJRequirements/openjfx-13.0.1_windows-x64_bin-sdk/javafx-sdk-13.0.1/lib/javafx.graphics.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

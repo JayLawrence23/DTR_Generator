@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="openfx">
+    <CLASSES>
+      <root url="file://$USER_HOME$/Desktop/Dev/IntelliJRequirements/openjfx-13.0.1_windows-x64_bin-sdk/javafx-sdk-13.0.1/lib" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$USER_HOME$/Desktop/Dev/IntelliJRequirements/openjfx-13.0.1_windows-x64_bin-sdk/javafx-sdk-13.0.1/lib" />
+    </SOURCES>
+    <jarDirectory url="file://$USER_HOME$/Desktop/Dev/IntelliJRequirements/openjfx-13.0.1_windows-x64_bin-sdk/javafx-sdk-13.0.1/lib" recursive="false" />
+    <jarDirectory url="file://$USER_HOME$/Desktop/Dev/IntelliJRequirements/openjfx-13.0.1_windows-x64_bin-sdk/javafx-sdk-13.0.1/lib" recursive="false" type="SOURCES" />
+  </library>
+</component>

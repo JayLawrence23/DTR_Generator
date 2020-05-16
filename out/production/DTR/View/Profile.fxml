@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="656.0" prefWidth="1070.0" style="-fx-background-color: #EBEAED;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ProfileController">
+   <children>
+      <Label layoutX="70.0" layoutY="50.0" text="Profile" textFill="#5e5e5e">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Separator layoutX="19.0" layoutY="133.0" prefHeight="6.0" prefWidth="1043.0" />
+      <Label layoutX="89.0" layoutY="150.0" text="Username" textFill="#616161">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Separator layoutX="89.0" layoutY="179.0" prefHeight="6.0" prefWidth="890.0" />
+      <Label layoutX="89.0" layoutY="202.0" text="Name" textFill="#616161">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Separator layoutX="89.0" layoutY="243.0" prefHeight="0.0" prefWidth="890.0" />
+      <Label layoutX="89.0" layoutY="254.0" text="Employee ID" textFill="#616161">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Separator layoutX="89.0" layoutY="290.0" prefHeight="0.0" prefWidth="890.0" />
+      <Label layoutX="91.0" layoutY="393.0" text="Email" textFill="#616161">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="89.0" layoutY="348.0" text="Phone Number" textFill="#616161">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="84.0" layoutY="306.0" text="Contact Information" textFill="#616161">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Separator layoutX="84.0" layoutY="334.0" prefHeight="3.0" prefWidth="890.0" />
+      <Separator layoutX="84.0" layoutY="378.0" prefHeight="3.0" prefWidth="890.0" />
+      <Label layoutX="373.0" layoutY="191.0" text="First Name" textFill="#616161" />
+      <Label fx:id="txtFirst" alignment="CENTER" layoutX="323.0" layoutY="210.0" prefHeight="26.0" prefWidth="185.0" textFill="#363636">
+         <font>
+            <Font size="17.0" />
+         </font></Label>
+      <Label layoutX="634.0" layoutY="191.0" text="Last Name" textFill="#616161" />
+      <Label fx:id="txtLast" alignment="CENTER" layoutX="546.0" layoutY="211.0" prefHeight="21.0" prefWidth="234.0" textFill="#363636">
+         <font>
+            <Font size="17.0" />
+         </font></Label>
+      <Label layoutX="91.0" layoutY="435.0" text="Address" textFill="#616161">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Separator layoutX="84.0" layoutY="426.0" prefHeight="3.0" prefWidth="890.0" />
+      <Label fx:id="txtId" layoutX="373.0" layoutY="254.0" prefHeight="26.0" prefWidth="293.0" textFill="#363636">
+         <font>
+            <Font size="17.0" />
+         </font></Label>
+      <Label fx:id="txtUname" layoutX="373.0" layoutY="150.0" prefHeight="21.0" prefWidth="170.0" textFill="#363636">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtNum" layoutX="373.0" layoutY="348.0" prefHeight="21.0" prefWidth="185.0" textFill="#363636">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtMail" layoutX="373.0" layoutY="393.0" prefHeight="21.0" prefWidth="485.0" textFill="#363636">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtAdd" layoutX="373.0" layoutY="435.0" prefHeight="21.0" prefWidth="485.0" textFill="#363636">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

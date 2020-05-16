@@ -1,0 +1,22 @@
+.button3
+{
+	-fx-background-color:  linear-gradient(to bottom left, #6B51B3, #462B9B);
+	-fx-background-radius:30;
+}
+
+.button3:hover
+{
+	-fx-background-color: linear-gradient(to bottom left, #462B9B, #6B51B3);
+	-fx-background-radius:30;
+}
+
+.button3:pressed
+{
+	-fx-background-color:  linear-gradient(to bottom left, #6B51B3, #462B9B);
+	-fx-background-radius:30;
+}
+.btnSignIn:hover,.button3:hover
+{
+    -fx-cursor: hand;
+    -fx-font-size: 15.4px;
+}

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: #EBEAED;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MainMenuController">
+   <children>
+      <Pane layoutX="-1.0" layoutY="-1.0" prefHeight="112.0" prefWidth="1366.0" style="-fx-background-color: #FFF;" AnchorPane.bottomAnchor="656.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="64.0" layoutY="47.0" text="Daily Time Record Generator" textFill="#f7633b">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <BorderPane fx:id="bdPane" layoutY="123.0" prefHeight="656.0" prefWidth="1366.0">
+         <left>
+            <VBox prefHeight="383.0" prefWidth="294.0" style="-fx-background-color: #2D3032; -fx-background-radius: 0 50 0 0;" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane prefHeight="148.0" prefWidth="294.0">
+                     <children>
+                        <JFXButton fx:id="btnTimeIn2" buttonType="RAISED" layoutX="33.0" layoutY="48.0" onAction="#handleButtonAction" prefHeight="43.0" prefWidth="223.0" ripplerFill="#808080" style="-fx-background-color: #9615DB; -fx-background-radius: 30; -fx-border-radius: 30;" text="Time-In" textAlignment="JUSTIFY" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Assets/icons8_time_100px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <Separator layoutX="17.0" layoutY="136.0" prefHeight="0.0" prefWidth="251.0" />
+                     </children>
+                  </Pane>
+                  <Button fx:id="btnDash" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="223.0" styleClass="button4" stylesheets="@../Assets/button4.css" text="Dashboard" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" top="30.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="21.0" fitWidth="23.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../Assets/icons8_combo_chart_100px_1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnEmployee" layoutX="20.0" layoutY="88.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="223.0" styleClass="button4" stylesheets="@../Assets/button4.css" text="Employee" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Assets/icons8_employee_100px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="btnRecord" layoutX="10.0" layoutY="129.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="223.0" styleClass="button4" stylesheets="@../Assets/button4.css" text="Records" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Assets/icons8_bulleted_list_100px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="btnProfile" layoutX="20.0" layoutY="286.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="223.0" styleClass="button4" stylesheets="@../Assets/button4.css" text="Profile" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Assets/icons8_user_32px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="btnSettings" layoutX="20.0" layoutY="286.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="223.0" styleClass="button4" stylesheets="@../Assets/button4.css" text="Settings" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Assets/icons8_settings_100px_1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="btnLogout" layoutX="10.0" layoutY="170.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="223.0" styleClass="button4" stylesheets="@../Assets/button4.css" text="Logout" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="18.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Assets/icons8_logout_rounded_up_100px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <Pane fx:id="pnDash" prefHeight="656.0" prefWidth="1067.0" style="-fx-background-color: #EBEAED;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="38.0" layoutY="32.0" text="Welcome Administrator" textFill="#686868">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Pane layoutX="26.0" layoutY="77.0" prefHeight="169.0" prefWidth="240.0" style="-fx-background-color: #D9A345;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="14.0" prefHeight="17.0" prefWidth="91.0" text="Today's Time-In" textFill="WHITE" />
+                        <Label fx:id="lblTimeIn" layoutX="199.0" layoutY="60.0" prefHeight="49.0" prefWidth="41.0" text="15" textFill="WHITE">
+                           <font>
+                              <Font size="29.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutY="116.0" prefHeight="3.0" prefWidth="240.0" />
+                        <Label layoutX="22.0" layoutY="130.0" text="View more" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="imgViewTime" fitHeight="35.0" fitWidth="44.0" layoutX="202.0" layoutY="125.0" onMouseClicked="#handleActionClicked" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Assets/icons8_right_100px.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="49.0" fitWidth="52.0" layoutX="18.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Assets/icons8_time_100px.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="289.0" layoutY="77.0" prefHeight="169.0" prefWidth="240.0" style="-fx-background-color: #C8736F;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="14.0" prefHeight="17.0" prefWidth="122.0" text="Total Time Generated" textFill="WHITE" />
+                        <Label fx:id="lblTotalGen" layoutX="196.0" layoutY="60.0" prefHeight="49.0" prefWidth="41.0" text="15" textFill="WHITE">
+                           <font>
+                              <Font size="29.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutY="116.0" prefHeight="3.0" prefWidth="240.0" />
+                        <Label layoutX="18.0" layoutY="130.0" text="View more" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="imgViewGen" fitHeight="35.0" fitWidth="44.0" layoutX="199.0" layoutY="125.0" onMouseClicked="#handleActionClicked" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Assets/icons8_right_100px.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="49.0" fitWidth="52.0" layoutX="18.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Assets/icons8_bulleted_list_100px.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="550.0" layoutY="77.0" prefHeight="169.0" prefWidth="240.0" style="-fx-background-color: #138086;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="14.0" prefHeight="17.0" prefWidth="91.0" text="Employees" textFill="WHITE" />
+                        <Label fx:id="lblTotalEmp" layoutX="185.0" layoutY="54.0" prefHeight="49.0" prefWidth="41.0" text="15" textFill="WHITE">
+                           <font>
+                              <Font size="29.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutY="116.0" prefHeight="3.0" prefWidth="240.0" />
+                        <Label layoutX="22.0" layoutY="130.0" text="View more" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="imgViewEmp" fitHeight="35.0" fitWidth="44.0" layoutX="199.0" layoutY="125.0" onMouseClicked="#handleActionClicked" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Assets/icons8_right_100px.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="49.0" fitWidth="52.0" layoutX="14.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Assets/icons8_employee_100px.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="807.0" layoutY="77.0" prefHeight="169.0" prefWidth="240.0" style="-fx-background-color: #59609E;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="14.0" prefHeight="17.0" prefWidth="108.0" text="Inactive Employees" textFill="WHITE" />
+                        <Label fx:id="lblTotalAbs" layoutX="182.0" layoutY="60.0" prefHeight="49.0" prefWidth="41.0" text="15" textFill="WHITE">
+                           <font>
+                              <Font size="29.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutY="116.0" prefHeight="3.0" prefWidth="240.0" />
+                        <Label layoutX="29.0" layoutY="130.0" text="View more" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="imgViewAbs" fitHeight="35.0" fitWidth="44.0" layoutX="202.0" layoutY="125.0" onMouseClicked="#handleActionClicked" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Assets/icons8_right_100px.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="49.0" fitWidth="49.0" layoutX="18.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Assets/icons8_delete_user_male_100px.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

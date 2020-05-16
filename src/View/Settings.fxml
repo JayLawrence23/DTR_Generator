@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="pnSettings" prefHeight="656.0" prefWidth="1100.0" style="-fx-background-color: #EBEAED;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SettingsController">
+   <children>
+      <Label layoutX="70.0" layoutY="50.0" text="Settings" textFill="#4a4a4a">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <Separator layoutX="14.0" layoutY="133.0" prefHeight="3.0" prefWidth="1028.0" />
+      <Label layoutX="70.0" layoutY="136.0" prefHeight="33.0" prefWidth="103.0" text="Security" textFill="#1abc9c">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnChangepass" layoutX="117.0" layoutY="194.0" onAction="#handleButtonAction" prefHeight="39.0" prefWidth="226.0" text="Change Password                &gt;" textFill="#4a4a4a">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="21.0" fitWidth="23.0" layoutX="85.0" layoutY="202.0">
+         <image>
+            <Image url="@../Assets/icons8_key_64px_5.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="132.0" layoutY="225.0" prefHeight="17.0" prefWidth="364.0" text="It's a good to use a strong password that you're not using elsewhere" textFill="#95a5a6" />
+      <Separator layoutX="8.0" layoutY="268.0" prefHeight="11.0" prefWidth="540.0" />
+      <Label fx:id="lblGroups" layoutX="71.0" layoutY="276.0" prefHeight="39.0" prefWidth="92.0" text="Groups" textFill="#1abc9c">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnDepartment" alignment="TOP_LEFT" graphicTextGap="6.0" layoutX="122.0" layoutY="328.0" onAction="#handleButtonAction" prefHeight="39.0" prefWidth="226.0" text=" Department                         &gt;" textFill="#4a4a4a">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <ImageView fx:id="imgDep" fitHeight="27.0" fitWidth="38.0" layoutX="86.0" layoutY="328.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/icons8_department_64px.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnType_Employee" alignment="TOP_LEFT" graphicTextGap="6.0" layoutX="122.0" layoutY="375.0" onAction="#handleButtonAction" prefHeight="39.0" prefWidth="226.0" text="Type of Employee                 &gt;" textFill="#4a4a4a">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <ImageView fx:id="imgEmp" fitHeight="27.0" fitWidth="38.0" layoutX="86.0" layoutY="375.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/icons8_member_80px.png" />
+         </image>
+      </ImageView>
+      <StackPane layoutX="539.0" layoutY="138.0" prefHeight="457.0" prefWidth="540.0">
+         <children>
+            <Pane fx:id="pnChangepass" prefHeight="448.0" prefWidth="537.0" visible="false">
+               <children>
+                  <Label layoutX="109.0" layoutY="73.0" prefHeight="39.0" prefWidth="103.0" text="Current" textFill="#4a4a4a">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="txtCurrentPass" layoutX="196.0" layoutY="80.0" onKeyPressed="#handleKeyPressed" onKeyTyped="#handleKeyTyped" prefHeight="25.0" prefWidth="173.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font></PasswordField>
+                  <Label layoutX="128.0" layoutY="149.0" text="New" textFill="#4a4a4a">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="txtNewPass" disable="true" layoutX="197.0" layoutY="150.0" onKeyPressed="#handleKeyPressed" onKeyTyped="#handleKeyTyped" prefHeight="25.0" prefWidth="173.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font></PasswordField>
+                  <Label layoutX="68.0" layoutY="246.0" prefHeight="27.0" prefWidth="120.0" text="Re-type new" textFill="#4a4a4a">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="txtRenewPass" disable="true" layoutX="197.0" layoutY="244.0" onKeyPressed="#handleKeyPressed" onKeyTyped="#handleKeyTyped" prefHeight="25.0" prefWidth="173.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font></PasswordField>
+                  <StackPane layoutY="-2.0" prefHeight="457.0" prefWidth="540.0" visible="false" />
+                  <ImageView fx:id="imgCurrentWrong" fitHeight="39.0" fitWidth="27.0" layoutX="370.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@../Assets/icons8_cancel_100px.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="lblMatch" layoutX="209.0" layoutY="111.0" text="Password does not match" textFill="RED" visible="false">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <StackPane layoutX="365.0" layoutY="244.0" prefHeight="31.0" prefWidth="38.0">
+                     <children>
+                        <ImageView fx:id="imgRetypeCheck" fitHeight="39.0" fitWidth="27.0" layoutX="16.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@../Assets/icons8_checked_64px.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="imgRetypeWrong" fitHeight="39.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@../Assets/icons8_cancel_100px.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </StackPane>
+                  <Label fx:id="lblNew" layoutX="197.0" layoutY="187.0" prefHeight="19.0" prefWidth="245.0" text="Password must be 6 characters and above" textFill="#838383">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblNew1" layoutX="197.0" layoutY="206.0" prefHeight="19.0" prefWidth="245.0" text="Password must have atleast one number" textFill="#838383">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="imgChar" fitHeight="17.0" fitWidth="17.0" layoutX="175.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@../Assets/icons8_checked_128px.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="imgNum" fitHeight="17.0" fitWidth="17.0" layoutX="175.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@../Assets/icons8_checked_128px.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="imgChar1" fitHeight="17.0" fitWidth="17.0" layoutX="175.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@../Assets/icons8_cancel_100px.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="imgNum1" fitHeight="17.0" fitWidth="17.0" layoutX="175.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@../Assets/icons8_cancel_100px.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton fx:id="btnSavePass" layoutX="196.0" layoutY="336.0" onAction="#handleButtonAction" prefHeight="39.0" prefWidth="163.0" style="-fx-background-color: #35A98E; -fx-border-radius: 30; -fx-background-radius: 30;" text="Save Changes" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane>
+            <Pane fx:id="pnDept" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" visible="false">
+               <children>
+                  <TableView fx:id="tbl_Dept" layoutY="199.0" prefHeight="256.0" prefWidth="540.0">
+                     <columns>
+                        <TableColumn fx:id="col_Dept" prefWidth="182.0" text="Department" />
+                        <TableColumn fx:id="col_Status" prefWidth="121.0" text="Status" />
+                        <TableColumn fx:id="col_Date" prefWidth="144.0" text="Date Created" />
+                        <TableColumn fx:id="col_Action" prefWidth="92.0" text="Action" />
+                     </columns>
+                  </TableView>
+                  <JFXButton fx:id="btn_AddDept" layoutX="317.0" layoutY="114.0" onAction="#handleButtonAction" prefHeight="40.0" prefWidth="189.0" style="-fx-background-color: #35A98E; -fx-background-radius: 30; -fx-border-radius: 30;" text="Add" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <Label layoutX="30.0" layoutY="24.0" text="Department" textFill="#464646">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtAddDept" layoutX="30.0" layoutY="114.0" prefHeight="40.0" prefWidth="201.0" promptText="Add" style="-fx-background-color: #EBEAED; -fx-border-color: #888888; -fx-background-radius: 30; -fx-border-radius: 30; -fx-border-width: 2;">
+                     <padding>
+                        <Insets left="15.0" />
+                     </padding>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextField>
+                  <Label fx:id="lblDept" layoutX="37.0" layoutY="160.0" prefHeight="17.0" prefWidth="147.0" text="Label" textFill="RED" visible="false">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="pnType" prefHeight="200.0" prefWidth="200.0" visible="false">
+               <children>
+                  <TableView fx:id="tbl_Type" layoutY="199.0" prefHeight="256.0" prefWidth="540.0">
+                    <columns>
+                      <TableColumn fx:id="col_Type" prefWidth="170.0" text="Type" />
+                      <TableColumn fx:id="col_Status1" prefWidth="124.0" text="Status" />
+                        <TableColumn fx:id="col_Date1" prefWidth="150.0" text="Date Created" />
+                        <TableColumn fx:id="col_Action1" maxWidth="95.0" prefWidth="95.0" text="Action" />
+                    </columns>
+                  </TableView>
+                  <JFXButton fx:id="btn_AddType" layoutX="317.0" layoutY="114.0" onAction="#handleButtonAction" prefHeight="40.0" prefWidth="189.0" style="-fx-background-color: #35A98E; -fx-background-radius: 30; -fx-border-radius: 30;" text="Add" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <Label layoutX="30.0" layoutY="24.0" text="Type of Employee" textFill="#464646">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtAddType" layoutX="30.0" layoutY="114.0" prefHeight="40.0" prefWidth="201.0" promptText="Add" style="-fx-background-color: #EBEAED; -fx-border-color: #888888; -fx-background-radius: 30; -fx-border-radius: 30; -fx-border-width: 2;">
+                     <padding>
+                        <Insets left="15.0" />
+                     </padding>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextField>
+                  <Label fx:id="lblType" layoutX="34.0" layoutY="160.0" prefHeight="17.0" prefWidth="147.0" text="Label" textFill="RED" visible="false">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </StackPane>
+      <Label fx:id="lblPlease" layoutX="332.0" layoutY="52.0" text="Please change your password first" textFill="#ee3737">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

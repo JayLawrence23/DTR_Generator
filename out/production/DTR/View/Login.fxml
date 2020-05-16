@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginController">
+   <children>
+      <BorderPane prefHeight="500.0" prefWidth="750.0">
+         <left>
+            <Pane prefHeight="500.0" prefWidth="377.0" style="-fx-background-color: linear-gradient(to bottom left, #6B51B3, #462B9B);" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox layoutX="14.0" layoutY="14.0" prefHeight="15.0" spacing="5.0">
+                     <children>
+                        <Circle fx:id="btnClose" fill="#fc5d57" onMouseClicked="#handleMouseClicked" radius="6.0" stroke="WHITE" strokeType="INSIDE" styleClass="btnClose" />
+                        <Circle fill="#edb436" layoutX="16.0" layoutY="16.0" onMouseClicked="#handleMouseClicked" radius="6.0" stroke="WHITE" strokeType="INSIDE" />
+                        <Circle fx:id="btnMax" fill="#1cae4c" layoutX="38.0" layoutY="16.0" onMouseClicked="#handleMouseClicked" radius="6.0" stroke="WHITE" strokeType="INSIDE" />
+                     </children>
+                  </HBox>
+                  <Text fill="WHITE" layoutX="68.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Daily Time Record Generator">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="68.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time Tracking and Generating Records">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="lblTime" fill="WHITE" layoutX="96.0" layoutY="386.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10:20 AM">
+                     <font>
+                        <Font size="35.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="lblDay" fill="WHITE" layoutX="59.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Monday" wrappingWidth="127.09716796875">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="lblDate" fill="WHITE" layoutX="86.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1/2/2020">
+                     <font>
+                        <Font size="35.0" />
+                     </font>
+                  </Text>
+                  <Separator layoutX="59.0" layoutY="180.0" prefHeight="2.0" prefWidth="237.0" />
+                  <Separator layoutX="75.0" layoutY="338.0" prefHeight="2.0" prefWidth="194.0" />
+                  <ImageView disable="true" fitHeight="88.0" fitWidth="79.0" layoutX="130.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Assets/icons8_timer_127px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </left>
+         <center>
+            <StackPane fx:id="pnlStack" prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane fx:id="pnlPassword" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #fefefe;" visible="false">
+                     <children>
+                        <PasswordField fx:id="txtPassword" layoutX="44.0" layoutY="254.0" onKeyPressed="#KeyPressed" prefHeight="35.0" prefWidth="285.0" promptText="Password" style="-fx-background-radius: 20;">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </PasswordField>
+                        <Text fill="#656565" layoutX="44.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter your password">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="btnSignIn" layoutX="47.0" layoutY="352.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="35.0" prefWidth="281.0" styleClass="button3" stylesheets="@../Assets/buttonlogin.css" text="Sign In" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                        <ImageView fx:id="btnBack" fitHeight="35.0" fitWidth="35.0" layoutX="29.0" layoutY="31.0" onMouseClicked="#handleMouseClicked" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Assets/icons8_back_to_100px_3.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="lblHi" layoutX="44.0" layoutY="86.0" prefHeight="34.0" prefWidth="25.0" text="Hi " textFill="#5e5e5e" visible="false">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblName" layoutX="71.0" layoutY="86.0" prefHeight="34.0" prefWidth="267.0" textFill="#5e5e5e">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="btnShow" fitHeight="33.0" fitWidth="34.0" layoutX="288.0" layoutY="255.0" onMouseClicked="#handleMouseClicked" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Assets/icons8_hide_127px_1.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="lblError1" layoutX="47.0" layoutY="289.0" prefHeight="23.0" prefWidth="209.0" textFill="#5e5e5e">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtUsername1" layoutX="44.0" layoutY="187.0" onKeyPressed="#handleKeyPressed" onKeyReleased="#handleKeyReleased" onKeyTyped="#handleKeyTyped" prefHeight="35.0" prefWidth="285.0" promptText="Employee ID or Username" style="-fx-background-radius: 20;">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="44.0" layoutY="162.0" text="Enter Employee ID or Username" textFill="#5e5e5e">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="150.0" layoutY="25.0" prefWidth="73.0" text="Sign In" textFill="#6f6f6f">
+                           <font>
+                              <Font name="System Bold" size="21.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutX="87.0" layoutY="66.0" prefWidth="200.0" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="pnlLogin" prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <StackPane layoutX="53.0" layoutY="293.0" prefHeight="39.0" prefWidth="281.0">
+                           <children>
+                              <Button fx:id="btnTimeOut" layoutX="10.0" layoutY="16.0" mnemonicParsing="false" onAction="#handleButtonAction" onMouseClicked="#handleMouseClicked" prefHeight="58.0" prefWidth="281.0" style="-fx-background-color: #E12A3E; -fx-border-color: transparent; -fx-border-radius: 30; -fx-border-width: 1.3;" styleClass="button3" stylesheets="@../Assets/buttonlogin.css" text="Time Out" textFill="#fdfdfd">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnTimeIn" mnemonicParsing="false" onAction="#handleButtonAction" onMouseClicked="#handleMouseClicked" prefHeight="74.0" prefWidth="281.0" styleClass="button3" stylesheets="@../Assets/buttonlogin.css" text="Time In" textFill="WHITE">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </StackPane>
+                        <TextField fx:id="txtUsername" layoutX="51.0" layoutY="215.0" onKeyPressed="#handleKeyPressed" onKeyReleased="#handleKeyReleased" onKeyTyped="#handleKeyTyped" prefHeight="35.0" prefWidth="285.0" promptText="Employee ID or Username" style="-fx-background-radius: 20;">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <Text fill="#3e3e3e" fontSmoothingType="LCD" layoutX="148.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Audrey;" text="Time In" textAlignment="CENTER">
+                           <font>
+                              <Font size="27.0" />
+                           </font>
+                        </Text>
+                        <Label fx:id="lblError" layoutX="54.0" layoutY="256.0" prefHeight="21.0" prefWidth="233.0" textFill="#686868">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="btnNext" layoutX="193.0" layoutY="400.0" mnemonicParsing="false" onAction="#handleButtonAction" onMouseDragEntered="#handleMouseAction" prefHeight="35.0" prefWidth="135.0" style="-fx-background-color: transparent; -fx-background-radius: 30; -fx-border-radius: 30; -fx-border-width: 1.3; -fx-border-color: #5E5E5E;" styleClass="btnSignIn" stylesheets="@../Assets/buttonlogin.css" text="Sign In" textFill="#4a4a4a">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="51.0" layoutY="190.0" text="Enter Employee ID or Username" textFill="#5e5e5e">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutX="23.0" layoutY="100.0" prefHeight="5.0" prefWidth="328.0" />
+                     </children>
+                  </Pane>
+               </children>
+            </StackPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

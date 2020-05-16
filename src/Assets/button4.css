@@ -1,0 +1,46 @@
+.button4
+{
+	-fx-background-color: #2D3032;
+	-fx-text-fill: #F5F5F5;
+	-fx-background-radius: 30 30 30 30;
+	-fx-border-color: #2D3032;
+	-fx-border-radius: 30;
+	-fx-border-width:1.5;
+	-fx-opacity: 0.8;
+}
+.button4:hover
+{
+	
+	-fx-text-fill: #F5F5F5;
+	-fx-background-radius: 30 30 30 30;
+	-fx-border-color: #9615DB;
+	-fx-border-radius: 30;
+	-fx-border-width:1.5;
+}
+.button4:pressed
+{
+	-x-background-color: #9615DB;
+	-fx-text-fill: #F5F5F5;
+	-fx-background-radius: 30 30 30 30;
+	-fx-border-color: linear-gradient(#9615DB, #C789E8, #F7633B);
+	-fx-border-radius: 30;
+	-fx-border-width:1.5;
+}
+.button4:active
+{
+	-x-background-color: #9615DB;
+	-fx-text-fill: #F5F5F5;
+	-fx-background-radius: 30 30 30 30;
+	-fx-border-color: linear-gradient(#9615DB, #C789E8, #F7633B);
+	-fx-border-radius: 30;
+	-fx-border-width:1.5;
+}
+.button4:focused
+{
+	-x-background-color: #9615DB;
+	-fx-text-fill: #F5F5F5;
+	-fx-background-radius: 30 30 30 30;
+	-fx-border-color: linear-gradient(#9615DB, #C789E8, #9615DB);
+	-fx-border-radius: 30;
+	-fx-border-width:1.5;
+}

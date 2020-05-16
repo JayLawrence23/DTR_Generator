@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="openfx" level="project" />
+    <orderEntry type="library" name="AnimateFX-1.2.0" level="project" />
+    <orderEntry type="library" name="postgresql-42.2.8" level="project" />
+    <orderEntry type="library" name="common-lang3" level="project" />
+    <orderEntry type="library" name="itextpdf-5.4.0" level="project" />
+    <orderEntry type="library" name="jfoenix-9.0.8" level="project" />
+  </component>
+</module>

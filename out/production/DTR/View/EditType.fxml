@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="423.0" prefWidth="435.0" style="-fx-background-color: linear-gradient(to bottom left, #71798E, #737C88);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.EditTypeController">
+   <children>
+      <JFXToggleButton fx:id="tglStatus" disable="true" layoutX="153.0" layoutY="154.0" prefHeight="44.0" prefWidth="130.0" text="Inactive" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXToggleButton>
+      <JFXButton fx:id="btnBack" layoutX="222.0" layoutY="257.0" onAction="#handleActionButton" prefHeight="44.0" prefWidth="107.0" style="-fx-background-color: transparent; -fx-border-radius: 30; -fx-border-color: #FFF; -fx-border-width: 2; -fx-background-radius: 30;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="37.0" layoutY="46.0" text="Edit" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="124.0" text="Type of Employee:" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="95.0" layoutY="172.0" text="Status:" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtType" editable="false" focusColor="#1ccde1" layoutX="163.0" layoutY="119.0" prefHeight="31.0" prefWidth="203.0" unFocusColor="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <StackPane fx:id="stackButton" layoutX="95.0" layoutY="251.0" prefHeight="55.0" prefWidth="115.0">
+         <children>
+            <JFXButton fx:id="btnSave" layoutX="14.0" layoutY="16.0" onAction="#handleActionButton" prefHeight="44.0" prefWidth="107.0" style="-fx-background-color: #685C88; -fx-background-radius: 30;" text="Save" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnEdit" onAction="#handleActionButton" prefHeight="44.0" prefWidth="107.0" style="-fx-background-color: #685C88; -fx-background-radius: 30;" text="Edit" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </StackPane>
+   </children>
+</Pane>
